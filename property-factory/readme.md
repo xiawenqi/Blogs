@@ -1,5 +1,5 @@
 <!-- readme.md -->
-#在react－router的使用当中使用定制属性
+#在react－router中使用property factory定制属性
 
 React router的不同组件之间的通信可以通过url路径（params和query两种机制） 或者是使用和flux相同的基于全局变量的方式。 但是有时候还是需要对组件提供更方便的封装机制。
 
