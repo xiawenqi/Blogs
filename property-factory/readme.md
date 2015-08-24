@@ -63,6 +63,3 @@ function propertyFactory(Type, props){
 遇坑填坑。。。
 
 hope it helpful:)
-
-
-通过
