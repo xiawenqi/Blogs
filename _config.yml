@@ -1,0 +1,59 @@
+# Site settings
+title: 夏文奇的博客
+url: "http://xiawenqi.github.io"    # the protocol and hostname of your site, eg. `http://laobubu.github.io`
+baseurl: "" # the prefix of your site uri, eg. `"/jekyll-theme-EasyBook"` or empty string `""`
+#timezone: Asia/Chongqing
+description: >
+  To be or not to be
+
+# Your information
+email: xiawenqi90@gmail.com
+author: xiawenqi
+avatar: "https://www.gravatar.com/avatar/076bce3d85fe04813ab5f700ed1308f9"
+profile: 老司机大牛逼
+#twitter_username: twitter_username
+#github_username:  github_username
+profile_links:
+  Email: "mailto:xiawenqi90@gmail.com"
+  GitHub: "https://github.com/xiawenqi"
+  # You can add more profile links above, or edit _includes/sidebar.html 
+
+# Comment Service (Disqus or 多说)
+#  choose one and un-comment the line to active it
+#disqus_shortname: xxx   # get one: https://disqus.com/admin/signup/
+#duoshuo_shortname: xxx  # get one: http://duoshuo.com/create-site/
+
+excerpt_separator: <!--更多-->
+
+header:
+  links:             # Links on the header. Link to in-site page with a slash as prefix
+    关于: /about/
+    分类: /category/
+    # Donate: https://laobubu.net/donate.html
+
+permalink: /archivers/:title
+plugins:
+ - jekyll-paginate
+ - jekyll-gist
+ - jemoji
+
+# Build settings
+paginate: 5
+paginate_path: "page:num"
+
+highlighter: rouge
+markdown: kramdown
+
+# https://jekyllrb.com/docs/configuration/#precedence
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  math_engine: mathjax
